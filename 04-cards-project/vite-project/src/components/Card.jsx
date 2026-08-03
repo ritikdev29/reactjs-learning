@@ -5,6 +5,8 @@ const Card = (props) => {
     console.log(props);
 
     return (
+        // <div className="Home">
+
         <div className="card">
             <div className="top">
                 <img src={props.brandLogo} alt="" />
@@ -26,6 +28,8 @@ const Card = (props) => {
                 <button>Apply Now</button>
             </div>
         </div>
+
+        // </div>
     )
 }
 

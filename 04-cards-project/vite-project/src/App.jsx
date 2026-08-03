@@ -1,5 +1,7 @@
 import Card from './components/Card.jsx'
 
+
+
 const App = () => {
   const jobOpenings = [
     {
@@ -43,7 +45,8 @@ const App = () => {
       location: "Los Gatos, USA"
     },
     {
-      brandLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png",
+      brandLogo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwRYuJmJT7C9KG3UFq_VEd8wJIcXgN78vbH8vpsmQoXw&s=10",
+
       companyName: "Google",
       datePosted: "1 week ago",
       post: "Cloud Solutions Architect",
@@ -63,7 +66,7 @@ const App = () => {
       location: "Redmond, USA"
     },
     {
-      brandLogo: "https://blog.logomaster.ai/hs-fs/hubfs/ibm-logo-1967.jpg?width=672&height=454&name=ibm-logo-1967.jpg",
+      brandLogo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ10sQH1AScUWg4_XnRjrFjbI4L3-1sQzd2MTJhGZ2qsQ&s=10",
       companyName: "IBM",
       datePosted: "2 days ago",
       post: "AI Research Engineer",
@@ -101,7 +104,29 @@ const App = () => {
       tag2: "Mid Level",
       pay: "$70/hour",
       location: "Mumbai, India"
+    },
+    {
+      brandLogo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT50p65iZfekiHcwATadmMUfXRSSprcOXQdC811jEJTOQ&s=10",
+      companyName: "TCS NQT",
+      datePosted: "10 days ago",
+      post: "AI Research Engineer Junior",
+      tag1: "Part Time",
+      tag2: "Junior Level",
+      pay: "$105/hours",
+      location: "New York, America"
+    },
+
+    {
+      brandLogo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ10sQH1AScUWg4_XnRjrFjbI4L3-1sQzd2MTJhGZ2qsQ&s=10",
+      companyName: "Wipro",
+      datePosted: "20 days ago",
+      post: "AI Research Engineer",
+      tag1: "Full Time",
+      tag2: "Senior Level",
+      pay: "$95/hour",
+      location: "Benglore, USA"
     }
+
   ];
   console.log(jobOpenings);
 
