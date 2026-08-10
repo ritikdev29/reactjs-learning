@@ -1,9 +1,10 @@
 import React from 'react'
+// import Section1 from '../../../07-Ui-Project/src/components/Section1/Section1'
 
 const App = () => {
   return (
-    <div className='h-screen w-full bg-gray-400'>
-      App
+    <div>
+      {/* <Section1 /> */}
     </div>
   )
 }
