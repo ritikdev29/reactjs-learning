@@ -9,8 +9,7 @@ const App = () => {
       <Section1 />
       <Section2 />
       <Page1Content />
-      {/* <LeftContent />
-      <RightContent /> */}
+
     </div>
   )
 }
