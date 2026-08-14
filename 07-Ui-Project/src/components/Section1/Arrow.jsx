@@ -2,7 +2,7 @@ import React from 'react'
 
 const Arrow = () => {
     return (
-        <div className='text-8xl'>
+        <div className='text-7xl'>
             <i className="ri-arrow-right-up-fill"></i>
         </div>
 

@@ -5,10 +5,14 @@ import RightCard from './RightCard'
 
 const RightContent = () => {
     return (
-        <div className='h-full p-6 w-2/3 bg-blue-200'>
+        //  bg-blue-200  div bg color
+        <div className='h-full flex flex-nowrap gap-5  p-6 w-2/3'>
 
 
             <RightCard />
+            <RightCard />
+            <RightCard />
+
 
         </div>
     )
