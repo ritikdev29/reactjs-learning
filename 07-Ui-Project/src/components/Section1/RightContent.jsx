@@ -3,15 +3,17 @@ import 'remixicon/fonts/remixicon.css'
 import RightCard from './RightCard'
 
 
-const RightContent = () => {
+const RightContent = (props) => {
+    console.log(props.users.color);
     return (
         //  bg-blue-200  div bg color
-        <div className='h-full flex flex-nowrap gap-5  p-6 w-2/3'>
+        <div id='right' className='h-full flex rounded-4xl overflow-auto  flex-nowrap gap-5  p-6 w-2/3'>
 
 
-            <RightCard />
-            <RightCard />
-            <RightCard />
+            {props.users.map(function (elem, idx) {
+                return <RightCard key={idx} color={elem.color} id={idx} img={elem.img} tag={elem.tag} />
+            })}
+
 
 
         </div>
