@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', 'Courier', monospace;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+button{
+    padding: 10px 20px;
+    background-color: #eb5a5a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 20px
+    ;
+}
+input{
+    margin: 30px;
+    padding: 20px;
+}
+.box{
+    height: 200px;
+    width: 200px;
+    background-color: #eb5a5a;
+    margin-left: 50px;
+}
