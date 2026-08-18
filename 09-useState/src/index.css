@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+html,body{
+  width: 100%;
+  height: 100%;
+  background-color: lightcoral;
+}
+
+h1,button{
+  margin-left: 30px;
+  padding: 20px 30px;
+  margin: 20px;
+  border-radius: 10px;
+  border-color: lightgreen;
+  cursor: pointer;
+}
+
+h2{
+  background-color: gainsboro;
+  width: fit-content;
+  font-size: 100px;
+  padding: 10px 70px;
+  border-radius: 5px;
+  margin: 20px;
+}
+
