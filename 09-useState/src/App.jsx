@@ -8,7 +8,31 @@ const App = () => {
   const [users, setUsers] = useState([10, 20, 30])  // value change in array using function call 
   const [incre, setNums] = useState(0) // for h2
 
+  const [ak, setArray] = useState([10, 20, 30])
+  const btnClicked3 = () => {  // update the Arrays function ---->
+    const newNum1 = [...ak]
+    newNum1.push(99)
+
+    setArray(newNum1)
+    // console.log(newNum1);
+
+
+
+
+  }
+
   // const [jump, setNums] = useState(2)
+
+  const [name, setName] = useState({ users: 'Ritik', age: 22 }) // koi bhi variable jo ki Array kai under saved hai or koi object kai under saved hai to usko change karna hai to use krengey
+
+  const btnClicked = () => {
+    const newNum = { ...name };
+    newNum.users = 'Gautam'
+    newNum.age = 21
+    setName(newNum)
+
+    setName(newNum)
+  }
 
 
   function changeNum() {
@@ -54,6 +78,16 @@ const App = () => {
         <button onClick={decreaseNum} >Decrease</button>
         <button onClick={jump5Num}>Increase 5 t</button>
 
+      </div>
+
+      <div>
+        <h4>{name.users}, {name.age}</h4>
+        <button onClick={btnClicked}>Hey !</button>
+      </div>
+
+      <div>
+        <h5>{ak}</h5>
+        <button onClick={btnClicked3}>Update Array Button</button>
       </div>
 
     </div>
