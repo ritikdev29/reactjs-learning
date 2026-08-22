@@ -15,10 +15,12 @@ const App = () => {
 
     setArray(newNum1)
     // console.log(newNum1);
+  }
 
+  const [pr, setnum] = useState({ user: 'Rohan', age: 18 })
 
-
-
+  const btnClicked4 = () => {
+    setnum(pr => ({ ...pr, age: 25 }))
   }
 
   // const [jump, setNums] = useState(2)
@@ -64,6 +66,26 @@ const App = () => {
   //   a++;
   //   console.log(a);
   // }
+
+
+  // batch update
+  const [batch, setbatch] = useState(10)
+  const btnClicked6 = () => {
+
+    setbatch(prev => (prev + 1))
+    setbatch(prev => (prev + 1))
+    setbatch(prev => (prev + 1))
+
+    /**   * 
+     *  this is not update only one increase 
+     * setbatch(batch + 1)
+     setbatch(batch + 1)
+     setbatch(batch + 1)*/
+
+
+  }
+
+
   return (
     <div>
       <h1> Value of a is {num} <br /> <hr /> Value User Name is {username}  <br />{users} </h1>
@@ -88,6 +110,17 @@ const App = () => {
       <div>
         <h5>{ak}</h5>
         <button onClick={btnClicked3}>Update Array Button</button>
+      </div>
+
+
+      <div>
+        <h5>{pr.user},{pr.age}</h5>
+        <button onClick={btnClicked4}>Update Array age</button>
+      </div>
+
+      <div>
+        <h5>{batch}</h5>
+        <button onClick={btnClicked6}> click</button>
       </div>
 
     </div>
